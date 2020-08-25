@@ -25,7 +25,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
+        test: /\.(png|jpg|jpeg|svg|gif)$/,
         exclude: /node_modules/,
         use: ["file-loader"]
       }
@@ -37,8 +37,8 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin()
-  ],
+  ], 
   devServer: {
     historyApiFallback: true
   }
-};
+};   
